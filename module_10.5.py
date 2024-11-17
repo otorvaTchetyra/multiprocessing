@@ -1,6 +1,6 @@
 import time
 from multiprocessing import Pool
-# import os
+import os
 
 def read_info(filename):
     all_data = []
@@ -16,7 +16,10 @@ def read_info(filename):
 
 if __name__ == '__main__':
     filenames = [
-        r'D:\PythonProjects\module_10.5\multiprocessing\file 1.txt', './file 2.txt', './file 3.txt', './file 4.txt'
+        r'D:\PythonProjects\module_10.5\multiprocessing\file 1.txt', 
+        r'D:\PythonProjects\module_10.5\multiprocessing\file 2.txt', 
+        r'D:\PythonProjects\module_10.5\multiprocessing\file 3.txt', 
+        r'D:\PythonProjects\module_10.5\multiprocessing\file 4.txt'
     ]
 
     # Линейный вызов
